@@ -30,7 +30,6 @@ function saveBookmark(e) {
 }
 
 function deleteBookmark(url) {
-  //console.log(url);
   var bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
   for (var i = 0; i < bookmarks.length; i++) {
     if (bookmarks[i].url == url) {
